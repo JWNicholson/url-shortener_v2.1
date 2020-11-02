@@ -23,7 +23,7 @@ mongoose.connect(db)
  //routes
 const shorten = require('./routes/api/shorten');
 //if user make url request to website/api/shorten/* look in shorten.js for the router.get (/test) action
-app.use('./api/shorten', shorten);
+app.use('/api/shorten', shorten);
 
 //path
 app.get('/', (req,res) => {
